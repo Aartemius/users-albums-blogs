@@ -13,7 +13,7 @@ const fetchData = async(endpoint) => {
   return response.data;
 };
 
-app.use(express.static('dist'));
+app.use(express.static('public'));
 
 app.get('*', async (req, res) => {
   try {
