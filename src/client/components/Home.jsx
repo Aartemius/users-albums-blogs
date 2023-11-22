@@ -6,7 +6,7 @@ const Home = ({ users }) => {
   
   return (
     <div className="home-container">
-      <h1>Home</h1>
+      <h1>Home Page</h1>
       <ul className="users-list">
         { users?.map(user => (
           <li key={ user.id }>
