@@ -4,6 +4,7 @@ import ReactDOMServer from 'react-dom/server';
 import App from '../client/App';
 import axios from 'axios';
 import { StaticRouter } from "react-router-dom/server";
+import path from 'path';
 
 const app = express();
 const PORT = 3000;
@@ -13,7 +14,8 @@ const fetchData = async(endpoint) => {
   return response.data;
 };
 
-app.use(express.static('public'));
+// eslint-disable-next-line no-undef
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 app.get('*', async (req, res) => {
   try {
