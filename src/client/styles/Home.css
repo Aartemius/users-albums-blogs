@@ -1,0 +1,31 @@
+.users-list li {
+  display: flex;
+  align-items: center;
+  padding: .65rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #000;
+  transition: .2s;
+  margin-bottom: .5rem;
+  background: #fff;
+}
+
+.users-list li:hover {
+  background: rgba(0,0,0,.2);
+}
+
+
+.users-list li a {
+  width: 15%;
+  margin: 0 10%;
+  transition: .2s;
+  white-space: nowrap;
+}
+
+.users-list li a.user-name {
+  width: 50%;
+  margin: 0;
+}
+
+.users-list li a:hover {
+  color: #fff;
+}

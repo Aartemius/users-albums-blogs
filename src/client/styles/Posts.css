@@ -1,0 +1,18 @@
+.user-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.user-post:not(.user-post:last-of-type) {
+  border-bottom: 1px solid #000;
+}
+
+.user-post a {
+  transition: .2s;
+}
+
+.user-post a:hover {
+  color: grey;
+}
